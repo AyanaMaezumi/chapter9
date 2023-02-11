@@ -66,3 +66,28 @@ footer {
   height: 50px;
   background-color: #aaa;
 }
+
+/* タブレット縦置きサイズ（768px）以下の際に適用される設定 */
+@media screen and (max-width:768px) {
+  header {
+    width: 100%;
+  }
+  
+  main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .step-box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  
+  .step-box:last-child {
+    margin-bottom: 0;
+  }
+  
+}
